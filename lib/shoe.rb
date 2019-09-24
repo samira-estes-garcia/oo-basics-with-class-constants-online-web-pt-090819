@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    brand.delete_if { |brands| 
+    brand.delete_if {|brands| brand.uniq?} 
     BRANDS << brand 
   end
   

@@ -10,6 +10,11 @@ class Shoe
     end
   end
   
+  def unique_brands
+    if brand.uniq
+      BRANDS << brand
+    end
+  end
   
 
   def cobble

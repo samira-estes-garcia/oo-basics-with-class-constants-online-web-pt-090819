@@ -13,6 +13,8 @@ class Shoe
   def unique_brands
     if brand.uniq
       BRANDS << brand
+    else
+      brand
     end
   end
   
